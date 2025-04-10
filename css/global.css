@@ -1,0 +1,131 @@
+/* Global CSS Variables */
+:root {
+  --color-purple-50: hsl(260, 100%, 95%);
+  --color-purple-300: hsl(264, 82%, 80%);
+  --color-purple-500: hsl(263, 55%, 52%);
+
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-neutral-grey-100: hsl(214, 17%, 92%);
+  --color-neutral-grey-200: hsl(0, 0%, 81%);
+  --color-neutral-grey-400: hsl(224, 10%, 45%);
+  --color-neutral-grey-500: hsl(217, 19%, 35%);
+
+  --color-neutral-dark-blue: hsl(219, 29%, 14%);
+  --color-neutral-black: hsl(0, 0%, 7%);
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+    font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-neutral-grey-500);
+  background-color: var(--color-neutral-grey-100);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* desktop styles */
+
+
+.testimonial {
+  background-color: var(--color-neutral-white);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 60px 60px 40px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.5em;
+}
+header img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+header span {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+header span h1 {
+  font-size: 0.825rem;
+}
+
+header span h2 {
+  font-size: 0.625rem;
+}
+
+article:hover {
+  cursor: pointer;
+}
+article p {
+  font-size: 1.2rem;
+  font-weight:600;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  font-size: 0.925rem;
+  font-weight: 500;
+}
+
+
+.testimonial-1 {
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right 4em top;
+  background-color: var(--color-purple-500);
+  color: var(--color-neutral-white);
+
+}
+
+.testimonial-1 header img {
+  border: 0.2em solid var(--color-purple-300);
+}
+
+.testimonial-2 {
+  background-color: var(--color-neutral-grey-500);
+  color: var(--color-neutral-white);
+}
+
+.testimonial-3 {
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-dark-blue);
+}
+
+.testimonial-4 {
+  background-color: var(--color-neutral-dark-blue);
+  color: var(--color-neutral-white);
+}
+
+.testimonial-4 header img {
+  border: 0.2em solid var(--color-purple-500);
+}
+
+.testimonial-5 {
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-dark-blue);
+}
